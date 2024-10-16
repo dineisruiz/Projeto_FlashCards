@@ -12,7 +12,15 @@ function createFlashcard() {
     container.appendChild(flashcard);
 
     // Adiciona uma quebra de linha após o flashcard
-    container.appendChild(document.createElement('br'));
+    if(container.appendChild(flashcard <= 5)){
+        container.appendChild(document.createElement('br'))
+
+    } else{
+
+        container.appendChild(flashcard);
+
+
+    }
 
     // Mostra o título "Flashcards Criados" se houver pelo menos um flashcard
     document.getElementById('flashcards-title').style.display = 'block';
