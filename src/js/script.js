@@ -95,7 +95,7 @@ function removeFlashcard() {
     const flashcardsContainer = document.getElementById('flashcards-container');
     if (flashcardsContainer.hasChildNodes()) {
         flashcardsContainer.removeChild(flashcardsContainer.lastChild); // Remove a quebra de linha
-        flashcardsContainer.removeChild(flashcardsContainer.lastChild); // Remove o flashcard
+       // flashcardsContainer.removeChild(flashcardsContainer.lastChild); // Remove o flashcard
         updateFlashcardsLabelVisibility();
     }
 }
