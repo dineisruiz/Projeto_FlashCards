@@ -37,7 +37,7 @@ h1 {
 
 #flashcards-container {
     position: absolute;
-    top: 60px; /* Abaixo da label "Flashcards Criados" */
+    top: 30px; /* Abaixo da label "Flashcards Criados" */
     right: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
     padding: 10px;
