@@ -127,4 +127,3 @@ function updateFlashcardsLabelVisibility() {
         document.querySelector('.flashcards-label').style.display = 'none';
     }
 }
-
