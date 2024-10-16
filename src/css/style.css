@@ -17,7 +17,7 @@ h1 {
     top: 20px;
     left: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
-    padding: 20px;
+    padding: -30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -40,10 +40,10 @@ h1 {
     top: 30px; /* Abaixo da label "Flashcards Criados" */
     right: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 360px); /* Para não ultrapassar a margem da label */
+    width: calc(80% - 300px); /* Para não ultrapassar a margem da label */
 }
 
 .flashcard {
@@ -74,3 +74,4 @@ h1 {
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte mais atrativa */
     font-size: 24px;
 }
+
