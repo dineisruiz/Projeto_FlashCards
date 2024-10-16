@@ -40,7 +40,7 @@ h1 {
     top: 30px; /* Abaixo da label "Flashcards Criados" */
     right: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
-    padding: 5px;
+    padding: none;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: calc(80% - 300px); /* Para não ultrapassar a margem da label */
