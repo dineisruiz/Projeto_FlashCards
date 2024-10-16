@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcards de Idiomas</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="icon" href="src/imagens/icons.jpeg">
+</head>
+<body>
+    
+    
+    <div class="form-container">
+        <h2>Flashcards</h2>
+        <div>
+            <label for="search">Pesquisar Flashcard:</label>
+            <input type="text" id="search" name="search" onkeyup="searchFlashcards()">
+        </div>
+        <div>
+            <label for="topic">Tópico:</label>
+            <input type="text" id="topic" name="topic">
+        </div>
+        <div>
+            <label for="language">Idioma:</label>
+            <input type="text" id="language" name="language">
+        </div>
+        <div>
+            <label for="flashcard">Flashcard:</label>
+            <textarea id="flashcard" name="flashcard" rows="4" cols="35"></textarea>
+        </div>
+        <div>
+            <label for="color">Cor:</label>
+            <select id="color" name="color">
+                <option value="red" style="color: red;">Vermelho</option>
+                <option value="blue" style="color: blue;">Azul</option>
+                <option value="green" style="color: green;">Verde</option>
+                <option value="yellow" style="color: yellow;">Amarelo</option>
+            </select>
+        </div>
+        <button class="button" onclick="createFlashcard()">Criar Flashcard</button>
+        <button class="button" onclick="saveFlashcards('txt')">Salvar em TXT</button>
+        <button class="button" onclick="saveFlashcards('xls')">Salvar em XLS</button>
+        <button class="button" onclick="loadFlashcards()">Carregar Flashcards</button>
+        <button class="button" onclick="removeFlashcard()">Remover Flashcard</button>
+      
+    </div>
+    <div class="flashcards-label">
+        <h2 class="title" id="flashcards-title">Flashcards Criados</h2>
+    </div>
+    <div id="flashcards-container"></div>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

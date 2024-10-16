@@ -1,0 +1,76 @@
+body {
+    background-image: url('../imagens/flashcards.png');
+    background-size: contain; /* Ajustado para que toda a imagem apareça */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 20%; /* Ajusta a posição da imagem para baixo */
+    
+}
+
+h1 {
+    text-align: center; /* Centraliza o título "Flashcards de Idiomas" */
+    
+}
+
+.form-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+
+.flashcards-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente escondido */
+}
+
+#flashcards-container {
+    position: absolute;
+    top: 60px; /* Abaixo da label "Flashcards Criados" */
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 360px); /* Para não ultrapassar a margem da label */
+}
+
+.flashcard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8); /* Adicionado para melhorar a legibilidade */
+}
+
+.red { background-color: #ffcccc; }
+.blue { background-color: #cce5ff; }
+.green { background-color: #ccffcc; }
+.yellow { background-color: #ffffcc; }
+
+.button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte mais atrativa */
+    font-size: 24px;
+}
