@@ -21,6 +21,7 @@ function createFlashcard() {
 
 
     }
+    
 
     // Mostra o título "Flashcards Criados" se houver pelo menos um flashcard
     document.getElementById('flashcards-title').style.display = 'block';
@@ -81,7 +82,7 @@ function loadFlashcards() {
                     document.getElementById('flashcards-container').appendChild(flashcard);
 
                     // Adiciona uma quebra de linha após o flashcard
-                    document.getElementById('flashcards-container').appendChild(document.createElement('br'));
+                   // document.getElementById('flashcards-container').appendChild(document.createElement('br'));
                 }
             });
             updateFlashcardsLabelVisibility();
@@ -95,7 +96,7 @@ function removeFlashcard() {
     const flashcardsContainer = document.getElementById('flashcards-container');
     if (flashcardsContainer.hasChildNodes()) {
         flashcardsContainer.removeChild(flashcardsContainer.lastChild); // Remove a quebra de linha
-       // flashcardsContainer.removeChild(flashcardsContainer.lastChild); // Remove o flashcard
+        //flashcardsContainer.removeChild(flashcardsContainer.lastChild); // Remove o flashcard
         updateFlashcardsLabelVisibility();
     }
 }
@@ -126,3 +127,4 @@ function updateFlashcardsLabelVisibility() {
         document.querySelector('.flashcards-label').style.display = 'none';
     }
 }
+
